@@ -1,0 +1,160 @@
+- name: Exploratory Landscape Analysis (ELA)
+  domain: black-box
+  objectives: '1'
+  variable type: continuous
+  constraints: unconstrained or box-constrained
+  reference: https://doi.org/10.1145/2001576.2001690
+  implementation: https://github.com/Reiyan/pflacco
+  textual description: 'Exploratory Landscape Analysis (ELA) features'
+- name: Cell Mapping Features
+  domain: black-box
+  objectives: '1'
+  variable type: continuous
+  constraints: unconstrained or box-constrained
+  reference: https://doi.org/10.1007/978-3-319-07494-8_9
+  implementation: https://github.com/Reiyan/pflacco
+  textual description: 'Cell Mapping Techniques for Exploratory Landscape Analysis'
+- name: Dispersion Features
+  domain: black-box
+  objectives: '1'
+  variable type: continuous
+  constraints: unconstrained or box-constrained
+  reference: https://doi.org/10.1145/1143997.1144085
+  implementation: https://github.com/Reiyan/pflacco
+  textual description: 'The Dispersion Metric'
+- name: Information Content-Based Features
+  domain: black-box
+  objectives: '1'
+  variable type: continuous
+  constraints: unconstrained or box-constrained
+  reference: https://doi.org/10.1109/TEVC.2014.2302006
+  implementation: https://github.com/Reiyan/pflacco
+  textual description: 'Exploratory Landscape Analysis of Continuous Space Optimization Problems Using Information Content. Information Content of Fitness Sequences (ICoFiS).'
+- name: Nearest Better Features
+  domain: black-box
+  objectives: '1'
+  variable type: continuous
+  constraints: unconstrained or box-constrained
+  reference: https://doi.org/10.1145/2739480.2754642
+  implementation: https://github.com/Reiyan/pflacco
+  textual description: 'The Nearest-Better Features - also called Nearest-Better Clustering (NBC) Features. Features for detecting funnel structures.'
+- name: Barrier Tree Features
+  domain: black-box
+  objectives: '1'
+  variable type: continuous
+  constraints: unconstrained or box-constrained
+  reference: https://doi.org/10.1007/978-3-030-25147-5_7
+  implementation: https://github.com/kerschke/flacco
+  textual description: 'Following generalized cell mapping, barrier trees can be used to characterize the problem structure.'
+- name: Principal Components Features
+  domain: black-box
+  objectives: '1'
+  variable type: continuous
+  constraints: unconstrained or box-constrained
+  reference: https://doi.org/10.1007/978-3-030-25147-5_7
+  implementation: https://github.com/Reiyan/pflacco
+  textual description: 'Describe the variable scaling of continuous problems by applying a Principal Component Analysis.'
+- name: Linear model features
+  domain: black-box
+  objectives: '1'
+  variable type: continuous
+  constraints: unconstrained or box-constrained
+  reference: https://doi.org/10.1007/978-3-030-25147-5_7
+  implementation: https://github.com/kerschke/flacco
+  textual description: 'Following generalized cell mapping, barrier trees can be used to characterize the problem structure.'
+- name: Multi-objective Combinatorial Problem Features
+  domain: black-box
+  objectives: '2+'
+  variable type: binary/combinatorial
+  constraints: unconstrained
+  reference: https://doi.org/10.1162/evco_a_00193
+  implementation: '?'
+  textual description: 'Features describing Multi-objective Combinatorial Problems.'
+- name: Local Optima Networks (LON)
+  domain: black-box
+  objectives: '1'
+  variable type: combinatorial
+  constraints: unconstrained
+  reference: https://doi.org/10.1007/978-3-642-41888-4_9
+  implementation: '?'
+  textual description: 'Local Optima Networks (LON): A network-based model of combinatorial landscapes.'
+- name: DynamoRep
+  domain: black-box
+  objectives: '1'
+  variable type: continuous
+  constraints: unconstrained
+  reference: https://doi.org/10.1162/evco_a_00370
+  implementation: '?'
+  textual description: 'DynamoRep computes basic descriptive statistics such as min, max, mean, std over x and y values to capture algorithm-problem interaction in single-objective continuous optimization.'
+- name: Opt2Vec
+  domain: black-box
+  objectives: '1'
+  variable type: continuous
+  constraints: unconstrained
+  reference: https://doi.org/10.1016/j.ins.2024.121134
+  implementation: '?'
+  textual description: 'A continuous optimization problem representation based on algorithm behavior.'
+- name: DoE2Vec
+  domain: black-box
+  objectives: '1'
+  variable type: continuous
+  constraints: unconstrained
+  reference: https://doi.org/10.1145/3583133.3590609
+  implementation: https://github.com/nikivanstein/doe2vec
+  textual description: 'DoE2Vec: Deep-learning Based Features for Exploratory Landscape Analysis. Uses autoencoder (AE) based latent-space features. Does not require any feature engineering and is easily applicable to high-dimensional search spaces.'
+- name: Best-so-far trajectories
+  domain: black-box
+  objectives: '1'
+  variable type: continuous
+  constraints: unconstrained
+  reference: https://doi.org/10.1007/978-3-031-56852-7_7
+  implementation: '?'
+  textual description: 'Use raw optimisation (probing) trajectories containing the best performance values seen so far for each evaluation.'
+- name: Current trajectories
+  domain: black-box
+  objectives: '1'
+  variable type: continuous
+  constraints: unconstrained
+  reference: https://doi.org/10.1007/978-3-031-56852-7_7
+  implementation: '?'
+  textual description: 'Use raw optimisation (probing) trajectories containing the current performance values seen at each evaluation.'
+- name: Time series features using TSFRESH
+  domain: black-box
+  objectives: '1'
+  variable type: continuous
+  constraints: unconstrained
+  reference: https://doi.org/10.1145/3449639.3459399
+  implementation: '?'
+  textual description: 'Compute time series features using TSFRESH. The authors did this for internal CMA-ES variables, but this might also be applied to, e.g., performance trajectories.'
+- name: Deep learning-based features
+  domain: black-box
+  objectives: '1'
+  variable type: continuous
+  constraints: unconstrained
+  reference: https://doi.org/10.1145/3512290.3528834
+  implementation: '?'
+  textual description: 'Represents the initially sampled points as point clouds to 2D images for use with deep-learning models.'
+- name: Deep-ELA
+  domain: black-box
+  objectives: '1, 2+'
+  variable type: continuous
+  constraints: unconstrained
+  reference: https://doi.org/10.1162/evco_a_00372
+  implementation: '?'
+  textual description: 'Deep-ELA: Deep Exploratory Landscape Analysis with Self-Supervised Pretrained Transformers for Single-Objective and Multiobjective Continuous Optimization Problems.'
+- name: Decomposition-Based Multi-objective Landscape Features
+  domain: black-box
+  objectives: '2+'
+  variable type: continuous
+  constraints: unconstrained
+  reference: https://doi.org/10.1007/978-3-030-72904-2_3
+  implementation: '?'
+  textual description: 'A set of landscape features for multi-objective combinatorial optimization, by decomposing the original multi-objective problem into a set of single-objective sub-problems.'
+- name: SOO search tree
+  domain: black-box
+  objectives: '1'
+  variable type: continuous
+  constraints: unconstrained
+  reference: 
+  implementation: '?'
+  textual description: 'Features on the basis of the search tree constructed by the so-called SOO global optimizer.'
