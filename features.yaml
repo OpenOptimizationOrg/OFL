@@ -155,6 +155,22 @@
   objectives: '1'
   variable type: continuous
   constraints: unconstrained
-  reference: 
+  reference: https://doi.org/10.1145/3299904.3340308
   implementation: '?'
   textual description: 'Features on the basis of the search tree constructed by the so-called SOO global optimizer.'
+- name: Scalarization-based features
+  domain: black-box
+  objectives: '2+'
+  variable type: continuous
+  constraints: unconstrained
+  reference: https://doi.org/10.1145/3712256.3726378
+  implementation: '?'
+  textual description: 'Scalarization-based ELA (S-ELA) for multi-objective continuous optimization using objective scalarization methods: decomposition and non-dominated sorting.'
+- name: Landscape Features for Multi-objective Interpolated Continuous Optimisation Problems
+  domain: black-box
+  objectives: '2+'
+  variable type: continuous
+  constraints: unconstrained
+  reference: https://doi.org/10.1145/3449639.3459353
+  implementation: '?'
+  textual description: 'Landscape Features for Multi-objective Interpolated Continuous Optimisation Problems aimed at measuring aspects of: global properties, multimodality, evolvability, and ruggedness. Uses a different sampling method to use features originally designed for discrete problems for the continuous case.'
