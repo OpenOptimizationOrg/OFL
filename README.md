@@ -28,7 +28,7 @@ To get involved, just send an email (see [contact](#contact)), or talk to any of
 ```
 @misc{opl26,
   title = {{OFL} – Optimisation feature library},
-  author = {Koen van der Blom and Carola Doerr and Olaf Mersmann and Boris Naujoks and Elena Raponi and Diederick Vermetten and Vanessa Volz and others},
+  author = {Koen van der Blom},
   year = {2026},
   note = {\url{https://openoptimizationorg.github.io/OFL/}}
 }
