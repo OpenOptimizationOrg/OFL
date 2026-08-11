@@ -26,7 +26,7 @@ To get involved, just send an email (see [contact](#contact)), or talk to any of
 ## How to cite 
 
 ```
-@misc{opl26,
+@misc{ofl26,
   title = {{OFL} – Optimisation feature library},
   author = {Koen van der Blom},
   year = {2026},
