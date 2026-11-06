@@ -174,3 +174,35 @@
   reference: https://doi.org/10.1145/3449639.3459353
   implementation: '?'
   textual description: 'Landscape Features for Multi-objective Interpolated Continuous Optimisation Problems aimed at measuring aspects of: global properties, multimodality, evolvability, and ruggedness. Uses a different sampling method to use features originally designed for discrete problems for the continuous case.'
+- name: Fitness distance correlation (FDC)
+  domain: white-box, grey-box
+  objectives: '1'
+  variable type: continuous, combinatorial
+  constraints: unconstrained
+  reference: 'Jones and Forrest 1995 - Fitness Distance Correlation as a Measure of Problem Difficulty for Genetic Algorithms'
+  implementation: '?'
+  textual description: 'Correlation between performance values and the distance to the global optimum. I.e., the global optimum must be known to compute this feature.'
+- name: Evolvability metrics
+  domain: black-box
+  objectives: '1'
+  variable type: continuous, combinatorial
+  constraints: unconstrained
+  reference: https://doi.org/10.1162/106365602317301754
+  implementation: '?'
+  textual description: 'Evolvability statistics of the fitness landscape surrounding sampled solutionas, to assess the ruggedness and neutrality of a landscape.'
+- name: Bag of local landscape patterns (BoLLP)
+  domain: black-box
+  objectives: '1'
+  variable type: continuous, combinatorial
+  constraints: unconstrained
+  reference: https://doi.org/10.1007/s00500-016-2091-4
+  implementation: '?'
+  textual description: 'Uses the fitness patterns of local candidate solutions.'
+- name: Bag of evolvability (BoEvo)
+  domain: black-box
+  objectives: '1'
+  variable type: continuous, combinatorial
+  constraints: unconstrained
+  reference: https://doi.org/10.1007/s00500-016-2091-4
+  implementation: '?'
+  textual description: 'Uses the evolvability of candidate solutions as local landscape feature.'
